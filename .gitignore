@@ -1,0 +1,12 @@
+# Ignore sensitive keys
+.env
+
+# Ignore large dependency folders
+node_modules/
+
+# Ignore OS-specific junk files
+.DS_Store
+Thumbs.db
+
+# Optional: If you don't want to track the videos on GitHub
+# clips/
