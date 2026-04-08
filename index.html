@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MorphClip</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+
+<div id="home" class="active">
+
+<h1 class="logo">MORPH<span>CLIP</span></h1>
+
+<div class="grid">
+
+<div class="card" onclick="openCategory('vfx')">
+<img src="thumbnails/ready.jpg">
+<p>VFX STORE</p>
+</div>
+
+<div class="card" onclick="openCategory('green')">
+<img src="thumbnails/green.jpg">
+<p>GREEN SCREEN</p>
+</div>
+
+<div class="card" onclick="openCategory('cricket')">
+<img src="thumbnails/cric.jpg">
+<p>CRICKET</p>
+</div>
+
+<div class="card" onclick="openCategory('ai')">
+<img src="thumbnails/ai.jpg">
+<p>AI REELS</p>
+</div>
+
+</div>
+</div>
+
+<div id="category">
+
+<button onclick="goHome()">Back</button>
+<h2 id="title"></h2>
+
+<div id="clips"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

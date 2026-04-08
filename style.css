@@ -1,0 +1,88 @@
+:root {
+    --gold: #ffcc00;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--dark-bg);
+    color: white;
+}
+
+#home, #category { display: none; }
+#home.active, #category.active { display: block; }
+
+.logo {
+    text-align: center;
+    font-size: clamp(2rem, 8vw, 3rem);
+    padding: 40px 0;
+    letter-spacing: 2px;
+}
+.logo span { color: var(--gold); }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.card:hover { transform: translateY(-5px); border-color: var(--gold); }
+
+.card img { width: 100%; height: 200px; object-fit: cover; }
+
+.card p { padding: 15px; font-weight: bold; font-size: 1.2rem; margin: 0; }
+
+/* Clips Detail View */
+.clip-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.video-preview {
+    font-size: 50px;
+    background: #000;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.price { color: var(--gold); font-size: 1.5rem; font-weight: bold; }
+
+.buy-btn {
+    background: var(--gold);
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.back-btn {
+    margin: 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    cursor: pointer;
+}
